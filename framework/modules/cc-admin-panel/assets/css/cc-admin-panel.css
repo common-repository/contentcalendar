@@ -1,0 +1,220 @@
+.cc-container {
+    margin-right: 20px;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    padding: 15px 35px 15px 35px;
+    
+}
+
+.clearfix:before {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+}
+
+.spinner {
+    background: url('../img/spinner.gif') no-repeat;
+    background-size: 18px 18px;
+    display: none;
+    float:left;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    margin: 0px 17px 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/***** OPTIONS ******/
+.cc-field-label {
+    float:left;
+    padding: 3px 5px;
+    font-weight: bold;
+    color: #5e5e5e;
+    font-size: 14px;
+    width:80px;
+    margin-right:10px;
+}
+
+.cc-field-container {
+	float:left;
+}
+
+.field-text-container .field-text,
+.field-select-container .field-select,
+.field-select-posts-container .field-select-posts,
+.field-select-categories-container .field-select-categories {
+    padding: 3px 5px;
+    width:400px;
+}
+
+.cc-field-container .cc-field-description {
+    margin:0px;
+    font-size: 12px;
+    color: grey;
+    font-style: italic;
+}
+
+.cc-option-container {
+    padding-top:10px;
+    padding-bottom:10px;
+    position:relative;
+}
+
+.cc-option-container .cc-submit{
+    padding: 5px 10px 5px 10px;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    background: #428bca;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    outline: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.cc-option-container .cc-reset-buttons {
+    float:right;
+}
+
+.cc-option-disabled .field-text,
+.cc-option-disabled .field-select,
+.cc-option-disabled .field-select-posts,
+.cc-option-disabled .wp-editor-container,
+.cc-option-disabled .field-select-categories {
+    border: 1px solid black;
+}
+
+.cc-logo-container {
+    float:left;
+}
+
+.cc-package-info-container {
+    float:right;
+    border:1px solid grey;
+    padding:15px;
+    font-weight: bold;
+    display:none;
+}
+
+.cc-line-separator {
+    width:100%;
+    height:2px;
+    background-color: grey;
+}
+
+.cc-package-info {
+    float:left;
+    margin-bottom:22px;
+}
+
+.cc-upgrade-button {
+    float:right;
+    margin-left: 30px;
+    margin-top: -6px;
+}
+
+.trial-date-info {
+    color: #cc0000;
+}
+
+.cc-plugin-description {
+    margin-bottom:50px;
+}
+
+.cc-plugin-form-title {
+    margin-bottom:25px;
+}
+
+#cc-connection-message {
+    margin-top:15px;
+}
+
+.cc-error {
+    color:red;
+}
+
+.cc-success {
+    color:green;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-top:0px;
+    overflow: hidden;
+    counter-reset: step;
+    float:left;
+}
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    float: left;
+    position: relative;
+    text-align:center;
+    width:120px;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: white;
+    background: #428bca;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+#progressbar li span {
+    color: #428bca;
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #428bca;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; 
+}
+#progressbar li:first-child:after {
+    content: none; 
+}
+#progressbar li.active:before,  
+#progressbar li.active:after {
+    background: #27AE60;
+    color: white;
+}
+
+#progressbar li.active span {
+    color: #27AE60;
+}
+
+#progressbar-container {
+    display:none;
+}
+
+.progressbar-title {
+    float:left;
+}
+
+.disconnect-container {
+    display:none;
+}
+
+
+
+
+
